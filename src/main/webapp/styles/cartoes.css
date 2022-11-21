@@ -1,0 +1,160 @@
+#page{
+    width: 80%;
+    height: fit-content;
+    margin: auto;
+    margin-top: 5%;
+    font-size: 1.8rem;
+    color: #000000;
+}
+
+#page input{
+    font-weight: bolder;
+    color: #000000;
+}
+
+.cardDiv{
+    background-color: rgb(146, 146, 146);
+    width: 80%;
+    height: fit-content;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 25px;
+    border: 2px solid #000000;
+
+}
+/* Header Cars */
+.headerCard{
+    display: grid;
+    grid-template-areas: "svg surname";
+    grid-template-columns: 20% 50% 30%;
+}
+
+.svgBank{
+    margin: auto;
+    grid-area: svg;
+}
+
+.surnameCard{
+    grid-area: surname;
+    font-size: 1.8rem;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+}
+
+.surnameCard:focus{
+    outline: none;
+}
+
+.tipo{
+    font-weight: bolder;
+}
+
+.tipo:hover{
+    cursor: pointer;
+}
+
+
+
+/* Final Header Cards */
+
+/* Informations cards */
+.informationCard{
+    display: grid;
+    grid-template-areas: 
+    "number number"
+    "validity cvv";
+    grid-template-columns: 50% 50%;
+}
+
+.informationCard p{
+    flex-wrap: nowrap;
+}
+
+.numberCard{
+    grid-area: number;
+    text-align: center;
+}
+
+.numberCard input{
+    font-size: 1.8rem;
+    border: 0;
+    background-color: transparent;
+}
+
+.numberCard img{
+    justify-content: end;
+}
+
+
+
+.validityCard{
+    grid-area: validity;
+    text-align: center;
+}
+
+.validityCard input{
+    font-size: 1.8rem;
+    width: 17%;
+    border: 0;
+    background-color: transparent;
+
+}
+
+.codeCard{
+    grid-area: cvv;
+    text-align: center;
+}
+
+.codeCard input{
+    font-size: 1.8rem;
+    width: 17%;
+    border: 0;
+    background-color: transparent;
+}
+
+.codeCard input:focus, .validityCard input:focus, .numberCard input:focus{
+    outline: 0;
+}
+
+/* Final informations cards */
+
+/* Options Cards */
+
+.optionsCard{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.svgDelete, .svgEdit{
+    transition: 1.5s;
+    margin: auto;
+    margin-bottom: 5%;
+}
+
+ 
+.svgDelete:hover{
+    transition: 1s;
+    filter: invert(18%) sepia(27%) saturate(6016%) hue-rotate(346deg) brightness(111%) contrast(92%);
+}
+
+.svgEdit:hover{
+    transition: 1.5s;
+    filter: invert(79%) sepia(23%) saturate(275%) hue-rotate(174deg) brightness(98%) contrast(85%);
+}
+
+#svgX:hover{
+    transition: 1s;
+    filter: invert(18%) sepia(27%) saturate(6016%) hue-rotate(346deg) brightness(111%) contrast(92%);
+
+}
+
+#svgCheck:hover{
+    transition: 1s;
+    filter: invert(39%) sepia(100%) saturate(383%) hue-rotate(71deg) brightness(91%) contrast(97%);
+}
+
+.informativos{
+    font-size: 32px;
+}

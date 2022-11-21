@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forncedor a</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/mensagemErro.css">
+    <link rel="stylesheet" href="styles/fornecedor.css">
+        <script src="scripts/scripts.js"></script>
+    
+</head>
+<body>
+    <header class="cabecalho-pagina">
+        <div class="logo">
+            <h1 class="logo"><a href="index.jsp">Logo</a></h1>
+        </div>
+        <div id="usuario">
+            <i class="fa-regular fa-bell fa-xl" id="widget"></i>
+            <i class="fa-regular fa-heart fa-xl" style="--fa-primary-color: red;" id="widget2"></i>
+            <i class="fa-solid fa-clock-rotate-left fa-xl" style="--fa-primary-color: red;" id="widget3" onclick="window.location.href = 'historico.jsp'"></i>
+            <i class="fa-solid fa-cart-shopping fa-xl" id="widget4" onclick="window.location.href = 'carrinho.jsp'"></i>
+
+            <span id="texto-cabecalho">
+                
+                <p><a href="">Olá Igor</a></p>
+            </span>
+            <div id="configUsuario">
+                <img src="<%=img %>" alt="" onclick=<%=href2%>>
+                <ul id="configPerfil">
+                    <li id="perfil"><a href="profile.jsp">Meu Perfil</a></li>
+                    <li id="finalizar"><a href="sair.jsp">Finalizar Sessão</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="informacoesFornecedor">
+            <img class="fotoFornecedor" src="fornecedor/logo.png" alt="">
+            <h1 class="nomeFornecedor">Açai Beach</h1>
+
+        </div>
+        <div class="categoria">
+            <p class="nomeCategoria"> <img src="files/desconto.svg" alt="">  Promoção</p>
+            <div class="fundoProduto">
+                <div class="produto">
+                    <span class="desconto">50%</span>
+                    <img src="produtos/PRODUTOAA1.png" alt="">
+                    <span class="nomeProduto">HAMBURGUER G<br>R$ 50,00</span>
+                </div>
+                <div class="produto">
+                    <span class="desconto">50%</span>
+                    <img src="produtos/PRODUTOAA1.png" alt="">
+                    <span class="nomeProduto">HAMBURGUER G<br>R$ 50,00</span>
+                </div>
+                <div class="produto">
+                    <span class="desconto">50%</span>
+                    <img src="produtos/PRODUTOAA1.png" alt="">
+                    <span class="nomeProduto">HAMBURGUER G<br>R$ 50,00</span>
+                </div>
+                <div class="produto">
+                    <span class="desconto">50%</span>
+                    <img src="produtos/PRODUTOAA1.png" alt="">
+                    <span class="nomeProduto">HAMBURGUER G<br>R$ 50,00</span>
+                </div>
+                <div class="produto">
+                    <span class="desconto">50%</span>
+                    <img src="produtos/PRODUTOAA1.png" alt="">
+                    <span class="nomeProduto">HAMBURGUER G<br>R$ 50,00</span>
+                </div>
+                <div class="produto">
+                    <span class="desconto">50%</span>
+                    <img src="produtos/PRODUTOAA1.png" alt="">
+                    <span class="nomeProduto">HAMBURGUER G<br>R$ 50,00</span>
+                </div>
+                <div class="produto">
+                    <span class="desconto">50%</span>
+                    <img src="produtos/PRODUTOAA1.png" alt="">
+                    <span class="nomeProduto">HAMBURGUER G<br>R$ 50,00</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <footer class="rodape-1">
+        <div class="lado-esquerdo-rodape-1">
+            <h2>Logo</h2>
+            <p>©2022, All right reserved.</p>
+        </div>
+        <div class="lado-direito-rodape-1">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+    </div>
+    </footer>
+</body>
+</html>

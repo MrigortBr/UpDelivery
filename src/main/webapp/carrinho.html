@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/carrinho.css">
+    <script src="scripts/carrinho.js"></script>
+    <script src="scripts/scripts.js"></script>
+
+</head>
+<body onload="detectarTodosProdutos()">
+    <header class="cabecalho-pagina">
+        <div class="logo">
+            <h1 class="logo"><a href="index.jsp">Logo</a></h1>
+        </div>
+        <div id="usuario">
+            <i class="fa-regular fa-bell fa-xl" id="widget"></i>
+            <i class="fa-regular fa-heart fa-xl" style="--fa-primary-color: red;" id="widget2"></i>
+            <i class="fa-solid fa-clock-rotate-left fa-xl" style="--fa-primary-color: red;" id="widget3" onclick="window.location.href = 'historico.jsp'"></i>
+            <i class="fa-solid fa-cart-shopping fa-xl" id="widget4" onclick="window.location.href = 'carrinho.jsp'"></i>
+
+            <span id="texto-cabecalho">
+                
+                <p><a href="">Olá Igor</a></p>
+            </span>
+            <div id="configUsuario">
+                <img src="users/imgUser.png" alt="" onclick="abrir">
+                <ul id="configPerfil">
+                    <li id="perfil"><a href="profile.jsp">Meu Perfil</a></li>
+                    <li id="finalizar"><a href="sair.jsp">Finalizar Sessão</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <h1>Carrinho</h1>
+        <div class="pedido" id="pedido1">
+            <div class="produto">
+                <img src="produtos/PRODUTOAA1.png" alt="" class="imagemProduto">
+                <p class="nomeProduto">Hamburguer<br>R$ 50,00</p>
+                <p class="avaliacao">NOTA: 5.0</p>
+                <div class="quantidade">
+                    <img src="files/menos.svg" alt="" class="menos">
+                    <h2 class="contador" id="contador">1</h2>
+                    <img src="files/mais.svg" alt="" class="mais">
+                </div>
+            </div>
+            <div class="produto">
+                <img src="produtos/PRODUTOAA1.png" alt="" class="imagemProduto">
+                <p class="nomeProduto">Hamburguer<br>R$ 50,00</p>
+                <p class="avaliacao">NOTA: 5.0</p>
+                <div class="quantidade">
+                    <img src="files/menos.svg" alt="" class="menos">
+                    <h2 class="contador" id="contador">1</h2>
+                    <img src="files/mais.svg" alt="" class="mais">
+                </div>
+            </div>
+
+            <div class="finalizarProduto">
+                <div class="fornecedor">
+                    <img src="fornecedor/1adalbertolanches.png" alt="" class="logoForncedor">
+                    <p class="nomeForncedor">Adalberto lanches</p>
+                </div>
+                <div class="formas">
+                    <label for="formaEntrega">Forma da entrega:</label>
+                    <select name="formaEntrega" id="">
+                        <option value="">Entrega</option>
+                        <option value="">Retirada</option>
+                    </select>
+                    <label for="cartao">Forma de Pagamento:</label>
+                    <select name="cartao" id="">
+                        <option value="">MEU CARTAO</option>
+                    </select>
+                </div>
+                <div class="conta">
+                    <p>1x Hamburguer - R$ 50,00</p>
+                    <p>1x Hamburguer - R$ 50,00</p>
+                    <p>Frete - R$ 0,00</p>
+                    <p class="valorFinal">Valor final - R$ 50,00</p>
+                </div>
+            </div>
+
+            <div class="finalizarCompra">
+                <img src="files/delete.svg" alt="" onclick="apagar('1')">
+                <button class="finalizarCompraButton">Finalizar Compra</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="rodape-1">
+        <div class="lado-esquerdo-rodape-1">
+            <h2>Logo</h2>
+            <p>©2022, All right reserved.</p>
+        </div>
+        <div class="lado-direito-rodape-1">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

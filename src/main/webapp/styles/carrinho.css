@@ -1,0 +1,121 @@
+main{
+    width: 80%;
+    margin: auto;
+}
+
+.pedido{
+    border-radius: 15px;
+    width: 80%;
+    margin: auto;
+    border: 1px solid black;
+    padding: 1%;
+    margin-bottom: 3%;
+}
+
+/* Produto */
+.produto{
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-areas: "img nome avaliacao quantidade";
+    grid-template-columns: 20% 40% 20% 20%;
+    border-bottom: 1px solid black;;
+    margin-bottom: 5%;
+}
+
+.imagemProduto{
+    height: 100px;   
+    grid-area: img;
+}
+
+.nomeProduto{
+    grid-area: nome;
+}
+
+.avaliacao{
+    grid-area: avaliacao;
+}
+
+.quantidade{
+    display: flex;
+    border-radius: 15px;
+    border: 1px solid gray;
+    height: fit-content;
+    margin:  auto;
+    width: 70%;
+}
+
+.menos, .mais{
+    margin: auto;
+    margin-top: 5%;
+}
+
+.contador{
+    margin: auto;
+    margin-bottom: 5%;
+}
+
+/* Finalizar Produto */
+
+.finalizarProduto{
+    display:  grid;
+    grid-template-columns: 30% 40% 30%;
+}
+
+.fornecedor{
+    display:  flex;
+}
+
+.logoForncedor{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin: auto;
+}
+
+.nomeForncedor{
+    margin: auto;
+    margin-left: 2%;
+}
+
+.formas{
+    margin: auto;
+}
+
+.formas select{
+    border: none;
+    outline: none;
+}
+
+.valorFinal{
+    border-top: 1px solid gray;
+}
+
+.finalizarCompra{
+    margin: auto;
+    display: grid;
+    justify-content: flex-end;
+    grid-template-columns: 50% 50%;
+}
+
+.finalizarCompra img{
+    margin: auto;
+    margin-left: 10%;
+    transition: 1s;
+}
+
+.finalizarCompra img:hover{
+    filter: invert(14%) sepia(89%) saturate(6035%) hue-rotate(5deg) brightness(107%) contrast(124%);
+}
+
+.finalizarCompraButton{
+    padding: 2%;
+    background-color: blue;
+    color: #ffff;
+    border: none;
+    border-radius: 15px;
+    width: 50%;
+    margin: 0;
+    margin-left: 40%;
+}
+

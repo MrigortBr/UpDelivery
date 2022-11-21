@@ -1,0 +1,40 @@
+.busca{
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+
+#fundoPagina{
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    display: flex;
+}
+#produtosFundo{
+    display: flex;
+    position: relative;
+    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#imgFundo{
+    width: 20%;
+    height: 40vh;
+    margin-bottom: 5%;
+    margin-right: 2%;
+    min-width: 20%;
+}
+
+#img{
+    width: 100%;
+    height: 90%;
+    border-radius: 15px;
+}
+
+#textoImg{
+    width: 100%;
+    text-align: center;
+    border: 2px solid gray;
+    border-radius: 15px;
+}

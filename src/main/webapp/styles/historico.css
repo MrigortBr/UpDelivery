@@ -1,0 +1,102 @@
+section{
+    width: 80%;
+    margin: auto;
+}
+
+.texto h1{
+    font-size: 1.6rem;
+    margin-bottom: 1%;
+    margin-top: 7%;
+
+}
+
+.texto h2{
+    font-size: 1.2rem;
+    margin-bottom: 1%;
+
+}
+
+
+
+#input-mes{
+    border: 1px solid gray;
+    border-radius: 15px;
+    width: fit-content;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    margin-top: 1%;
+
+}
+
+#select{
+    width: fit-content;
+    background-image: url("images/google.png");
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    border-radius: 15px;
+    border: none;
+}
+
+#select:focus-within{
+    outline: 0;
+    border-radius: 15px;
+
+}
+
+#select:hover{
+    outline: 0;
+}
+
+select option[value="teste"] {
+    background-image: url("images/google.png");
+}
+
+#pedidos{
+    margin-top: 4%;
+}
+
+.fundo-pedidos{
+    margin: auto;
+    width: 80%;
+    height: 15vh;
+    border-radius: 20px;
+    background-color: gray;
+    padding: 5%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 100%;
+    margin-bottom: 5%;
+}
+
+.pedido{
+    text-align: left;
+    color: white;
+    
+}
+
+.pedido a{
+	color: white;
+	font-weight: bolder;
+}
+
+.fundo-pedidos h1{
+}
+
+
+.refazer-pedido{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.refazer-pedido button{
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    border: 0;
+    border-radius: 15px;
+    padding: 2%;
+}

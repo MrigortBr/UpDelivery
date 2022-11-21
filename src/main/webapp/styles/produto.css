@@ -1,0 +1,96 @@
+.fundo-pagina{
+    width: 80%;
+    padding: 2% 2%;
+    border-radius: 15px;
+    outline: 2px gray solid;
+    margin: auto;
+    margin-top: 5%;
+    display: grid;
+    grid-template-areas: 
+    "IMG DESC"
+    "IMG COMPRAR";
+    grid-template-columns: 50% 50%;
+    gap: 2%;
+}
+
+#produto{
+    transition: .5s;
+    width: 100%;
+    border-radius: 15px;
+    outline: 2px gray solid;
+    grid-area: IMG;
+    max-height: 70vh;
+}
+
+#carrinho:hover{
+    transition: .5s;
+    outline: 4px gray solid;
+    cursor: pointer;
+}
+
+#carrinho:hover #adicionar path{
+    transition: .25s;
+    stroke: rgb(125, 206, 5);
+    transform: rotate(-10deg);
+}
+
+#info{
+    grid-area: DESC;
+}
+
+#carrinho{
+    padding: 2% 8%;
+    border-radius: 15px;
+    outline: 2px gray solid;
+    border: none;
+    grid-area: COMPRAR;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+#carrinho2{
+    grid-area: COMPRAR;
+    display: grid;
+    border-radius: 15px;
+    outline: 2px gray solid;
+    border: none;
+    width: 25%;
+    grid-template-areas:
+    "menos cont mais";
+    grid-template-columns: 25% 50% 25%;
+    height: fit-content;
+    visibility: hidden;
+}
+
+#carrinho2 h2{
+    grid-area: cont;
+    text-align: center;
+}
+
+#mais{
+    grid-area: mais;
+    width: 100%;
+    margin: auto;
+}
+
+#mais:hover{
+    transition: 1s;
+    stroke: green;
+    cursor: pointer;
+}
+
+#menos{
+    margin: auto;
+    grid-area: menos;
+    width: 100%;
+}
+
+#menos:hover{
+    transition: 1s;
+    stroke: red;
+    cursor: pointer;
+}
+
+

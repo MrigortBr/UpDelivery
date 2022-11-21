@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+
+body{
+    font-family: 'Inter', sans-serif;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+	user-select: none;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+
+}
+
+img, .titulo-rolagem-1{
+    cursor: pointer;
+}
+
+
+
+body::-webkit-scrollbar{
+    width: 10px;
+    background-color: rgb(253, 253, 253);
+}
+body::-webkit-scrollbar-thumb{
+    width: 10px;
+    background-color: gray;
+    border-radius: 10px;
+}
+
+
+/* Configuração de paramenetros Header/cabeçalho */
+.cabecalho-pagina{
+    width: 100%;
+    height: 25%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    max-height: 60px;
+}
+
+.logo{
+    align-items: center;
+}
+
+.logo h1{
+    margin: 0;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    width: fit-content;
+    font-size: 20px;
+
+    min-height: 50px;
+    max-height: 60px;
+}
+
+.logo h1:hover{
+    transition: 1s;
+    font-style: italic;
+    cursor: pointer;
+}
+
+#usuario{
+    width: 100%;
+    height: 25%;
+
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+    min-height: 50px;
+    max-height: 60px;
+    
+}
+#usuario img{
+    width: 2%;
+    height: 2%;
+
+    border-radius: 50px;
+    margin-left: 1%;
+    margin-right: 2%;
+
+    min-height: 45px;
+    min-width: 45px;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+#texto-cabecalho{
+    text-align: right;
+    width: fit-content;
+    min-width: 90px;
+    max-width: 150px;
+}
+
+#texto-cabecalho p{
+    font-size: 70%;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-weight: bolder;
+
+}
+
+#widget, #widget2, #widget3, #widget4{
+    transition: 1s;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#widget4{
+    margin-right: -0%;
+}
+
+#widget:hover, #widget2:hover{
+    animation: tada;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+
+    transition: 1s;
+    cursor: pointer;
+    color: blueviolet;
+}
+#widget3:hover{
+    transition: 1s;
+    cursor: pointer;
+    transform: rotate(-360deg);
+}
+#widget2:hover{
+    color: red;
+}
+#widget4:hover{
+    transition: 1s;
+    animation: tada;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    color: aquamarine;
+    cursor: pointer;
+}
+
+
+#configUsuario{
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: fit-content;
+    border-top: none;
+    margin-top: 9%;
+    outline: 0px solid gray;
+}
+
+#configUsuario img{
+    margin-left: 35%;
+    margin-top: 8%;
+    padding: 0;
+    border: 1px solid gray;
+}
+
+#configPerfil{
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    visibility: hidden;
+
+}
+
+#configPerfil li{
+    margin: auto;
+}
+
+#configPerfil li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Configuração da section de busca */
+
+.busca{
+    margin-top: 8%;
+    width: 100%;
+    display: grid;
+    grid-template-areas: '.texto-busca .texto-busca .texto-busca .texto-busca .texto-busca .texto-busca'
+    '.busca-completa .busca-completa .busca-completa .busca-completa .busca-completa .busca-completa';
+    min-width: 750px;
+}
+
+.texto-busca{
+    text-align: center;
+}
+
+.texto-busca h1{
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.texto-busca h4{
+    margin-top: 0;
+}
+
+.busca-completa{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+}
+
+.fundo-busca{
+    transition: .2s;
+    border: 0px solid red;
+    background-color: rgb(146, 146, 146);
+    width: 30%;
+    height: 50%;
+    padding: 5px;
+    border-radius: 10px;
+    min-width: 250px;
+
+
+}
+
+.fundo-busca input[type="text"]{
+    background-color: rgb(146, 146, 146);
+    border: none;
+    width: 90%;
+    height: 100%;
+}
+
+#input:focus{
+    outline: 0;
+}
+
+#input::placeholder{
+    color: black;
+}
+
+.fundo-busca:focus-within, .fundo-busca:hover,  #input:hover .fundo-busca{
+    cursor: pointer;
+    transition: .2s;
+    border: 2px solid #ff0000;
+}
+
+/* ofertas semanais */
+/* Categorias */
+/* Destaques */
+
+.section-rolagem-1{
+    margin-top: 7%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "a"
+    "b";
+    min-width: 600px;
+}
+
+
+
+.titulo-rolagem-1{
+    grid-area: a;
+    margin: auto;
+    grid-template-columns: 100%;
+    width: 80%;
+}
+
+
+
+
+.titulo-rolagem-1 h1{
+    font-size: 2rem;
+    margin-bottom: 5%;
+}
+
+.titulo-rolagem-1 h2{
+    margin-top: -5%;
+    font-size: 1rem;
+}
+
+.fundo-rolagem-1{
+    grid-area: b;
+    margin: auto;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    width: 80%;
+}
+
+
+
+
+.fundo-imagem-rolagem-1{
+    height: 35vh;
+    margin-left: 2%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-radius: 15px;
+    display: flex;
+    min-width: 200px
+}
+
+#categoria-1, #categoria-2, #categoria-3, #categoria-4, #categoria-5, #categoria-6{
+    overflow-x: unset;
+    overflow-y: unset;
+}
+
+.fundo-imagem-rolagem-1:hover{
+    cursor: pointer;
+}
+
+.imagem-rolagem-1{
+    transition: 1s;
+    background-color: gray;
+    width: 30vh;
+    height: 35vh;
+    max-width: 30vh;
+    border-radius: 15px;
+    z-index: -1;
+}
+
+.fundo-imagem-rolagem-1 img{
+    width: 100%;
+    height: 100%;
+}
+
+.fundo-imagem-rolagem-1:hover img{
+    cursor: pointer;
+    transform: scale(1.2);
+    z-index: 1;
+    transition: 1s;
+}
+
+.fundo-imagem-rolagem-1 span{
+    padding: 2% 4%;
+    height: 13%;
+    margin-right: -25%;
+    background-color: red;
+    color: white;
+    border-bottom-right-radius: 25%;
+    z-index: 2;
+}
+
+#categorias-imagem-fundo{
+    height: 60vh;
+}
+
+
+.fundo-rolagem-1::-webkit-scrollbar, .fundo-imagem-rolagem-1::-webkit-scrollbar{
+    width: 0px;
+}
+
+#layerBebida, #layerComidas, #layerFrutas, #layerFarmacias, #layerRestaurante{
+    transition: 1s;
+}
+
+#categoria-1:hover #layerBebida, #categoria-2:hover #layerComidas, #categoria-3:hover #layerFrutas, #categoria-4:hover #layerFarmacias, #categoria-5:hover #layerRestaurante{
+    transition: 1s;
+    transform: rotate(-10deg);}
+
+#layerComidas{
+    fill: black;
+}
+
+
+
+/* footer/rodapé */
+
+.rodape-1{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-top: 7%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border-top: #000000 solid 1px;
+}
+
+
+
+.lado-direito-rodape-1{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 5%;
+}
+.lado-direito-rodape-1 i{
+    margin-left: 10px;
+}

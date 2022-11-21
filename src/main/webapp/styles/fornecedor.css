@@ -1,0 +1,121 @@
+main{
+    width: 80%;
+    margin: auto;
+    border-radius: 15px;
+    border: 3px solid gray;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+
+}
+
+
+
+
+.informacoesFornecedor{
+    border-radius: 15px;
+    width: 90%;
+    border: 2px solid gray;
+    margin: auto;
+    margin-top: 1%;
+    display: grid;
+    grid-template-areas: "logo nome avaliacao";
+    grid-template-columns: 20% 60% 20%;
+    padding: 2% 2%;
+
+
+}
+
+.fotoFornecedor{
+    grid-area: logo;
+    border-radius: 50px;
+    width: 150px;
+    height: 150px;
+}
+
+.nomeFornecedor{
+    grid-area: nome;
+    margin: auto;
+    margin-left: 0;
+}
+
+.nomeCategoria{
+    font-size: 1.8rem;
+    font-weight: bolder;
+    background-color: gray;
+    color: red;
+    width: 90%;
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 15px;
+    padding: 1% 1%;
+
+}
+
+.fundoProduto::-webkit-scrollbar, .produto::-webkit-scrollbar{
+    width: 0;
+}
+
+.fundoProduto{
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    width: 90%;
+    padding: 1% 1%;
+    margin: auto;
+    height: fit-content;
+}
+
+.produto{
+    margin-right: 5%;
+    width: 200px;
+    height: 300px;
+    min-width: 200px;
+    min-height: 300px;
+    display: grid;
+    grid-template-rows: 10% 80% 10%;
+    transition: 1s;
+    margin-bottom: 5%;
+}
+
+.produto:hover{
+    transition: 1s;
+    transform: scale(1.05);
+}
+
+
+.desconto{
+    background-color: red;
+    z-index: 1;
+    width: fit-content;
+    padding: 5% 5%;
+    text-align: center;
+    margin: auto;
+    margin-left: 0;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    color: #ffff;
+}
+
+.produto img{
+    width: 110%;
+    height: 110%;
+    border-radius: 15px;
+    margin-top: -15%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+
+}
+
+
+
+.nomeProduto{
+    background-color: red;
+    width: 110%;
+    height: fit-content; 
+    margin-top: -5%;
+    text-align: center;
+    color: #ffff;
+    padding: 1% 0 5% 0 ;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+}

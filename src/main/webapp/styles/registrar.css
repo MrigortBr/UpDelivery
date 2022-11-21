@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+a{
+    text-decoration: none;
+    color: black;
+
+}
+
+
+
+body{
+    font-family: 'Inter', sans-serif;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+	user-select: none;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    color: #fff;
+    background: rgb(1,3,38);
+    background: linear-gradient(180deg, rgba(1,3,38,1) 35%, rgba(9,9,121,1) 70%, rgb(9,9,121) 100%);
+}
+
+.fundo{
+    background-color: #010326;
+    width: 100%;
+    height: 50vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.picture-fundo{
+    margin: 0;
+    padding: 0;
+    margin-left: -8%;
+}
+
+.textos{
+    width: auto;
+    width: 40%;
+    height: 100%;
+}
+
+h1.logo a{
+    color: #fff;
+    padding: 2%;
+}
+
+h1.titulo{
+    padding: 10%;
+    margin-top: 5%;
+
+}
+
+/* Login */
+
+.informacoes-fundo{
+    background-image: url("../assets/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 45px;
+    border: #010326 1px solid;
+    width: 37%;
+    height: 80vh;
+    margin-top: -40vh;
+    margin-left: 60%;
+    position: fixed;
+    color: black;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-auto-rows: min-content;    
+}
+
+.grid1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.row2{
+    display: grid;
+    width: 100%;
+    grid-template-areas: 
+    "IA IB"
+    "IC ID"
+    "IE IF"
+    "IG IH"
+    "IJ IJ";
+
+    grid-template-columns: 50%;
+    gap: 10% 10% ;
+
+}
+
+input{
+    position: relative;
+    max-height: 45px;
+    min-height: 45px;
+    width: 80%;
+    height: 100%;
+    border:none;
+    border-radius: 15px;
+    outline: 2px solid #010326;
+    background-color: transparent;
+}
+
+
+
+.bemvindo{
+    font-size: 2rem;
+    padding: 10% 0 0 0;
+    width: 100%;
+    justify-self: center;
+}
+
+.grid2{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-auto-rows: min-content;    
+}
+
+
+
+/* Texto Principal */
+
+.row{
+    width: 100%;
+    display: flex;
+    text-align: end;
+}
+
+.entre{
+    font-weight: bolder;
+    padding: 5% 10% 3% 12%;
+    font-size: 2.6rem;
+}
+
+.registrar{
+    width: 100%;
+    padding: 7% 10% 0% 12%;
+}
+/* Inputs */
+
+#nomeSection{
+    grid-area: IA;
+    margin-left: 20%;
+    position: relative;
+}
+
+#sobrenomeSection{
+    grid-area: IB;
+    position: relative;
+}
+
+#cpfSection{
+    grid-area: IC;
+    margin-left: 20%;
+    position: relative;
+}
+
+#telefoneSection{
+    grid-area: ID;
+    position: relative;
+}
+
+#datasNascSection{
+    grid-area: IE;
+    position: relative;
+    margin: auto;
+    width: 80%;
+    display: flex;
+    margin-left: 20%;
+}
+
+#datasNascSection input{
+    text-align: center;
+}
+
+#emailSection{
+    position: relative;
+    grid-area: IF;
+}
+
+#senhaSection{
+    position: relative;
+    grid-area: IG;
+    margin-left: 20%;
+}
+
+#senhaConfirmaSection{
+    position: relative;
+    grid-area: IH;
+}
+
+
+/* Configurar Label */
+
+.input-label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(10px, 10px);
+    transition:  .25s;
+}
+
+
+
+
+.campos:focus+.input-label, .campos:hover+.input-label, .campos:valid+.input-label{
+    transform: translate(0px, -10px) scale(.8);
+    padding-inline: 5px;
+    background-color: rgb(214, 214, 214);
+}
+
+.campos:is(:focus, :invalid){
+    outline-color: #010326;
+}
+.campos:is(:focus, :valid){
+    outline-color: #010326;
+}
+
+
+/* Proxima Pagina */
+
+#registrar{
+    transition: 0.5s;
+    transform: rotate(0deg);
+    grid-area: IJ;
+    background-color: #010326;
+    color: #fff;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    border-radius: 1em;
+    margin-left: 80%;
+}
+
+#registrar:hover{
+    transition: 0.5s;
+    cursor: pointer;
+    color: gray;
+    transform: rotate(360deg);
+}
+
+

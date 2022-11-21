@@ -1,0 +1,108 @@
+
+input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+}
+
+/*  */
+
+.fundoEndereco{
+    width: 80%;
+    margin: auto;
+}
+
+.cardEndereco{
+    width: 60%;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 3% 3%;
+}
+
+.cardEndereco{
+    margin-bottom: 5%;
+    min-width: min-content;
+}
+
+.headerEndereco{
+    display: grid;
+    grid-template-columns: 20% 80%;
+
+}
+
+.icoHome{
+    margin: auto;
+}
+
+/*  */
+
+.informacoesEndereco{
+    display: grid;
+    grid-template-areas: 
+    "rua bairro cidade"
+    "numero complemento cep"
+    "... ... send";
+    grid-template-columns: 30% 30% 30%;
+    gap: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.ruaLabel{
+    grid-area: rua;
+}
+
+.bairroLabel{
+    grid-area: bairro;
+}
+
+.cidadeLabel{
+    grid-area: cidade;
+}
+
+.numeroLabel{
+    grid-area: numero;
+}
+
+.complementoLabel{
+    grid-area: complemento;
+}
+
+.complementoLabel input{
+    width: 100%;
+}
+
+.CEPLabel{
+    grid-area: cep;
+}
+
+.salvarEndereco{
+    transition: 1s;
+    grid-area: send;
+    margin: auto;
+    transform: rotate(40deg);
+    margin-right: 0px;
+    background-color: rgba(119, 115, 115, 0.733);
+}
+
+.salvarEndereco:hover{
+    transition: 1s;
+    background-color: rgb(119, 115, 115);
+    transform: rotate(400deg);
+
+}
+
+.deletarEndereco{
+    transition: 1s;
+    grid-column-start: 0;
+    grid-column-end: 3;
+    margin: auto;
+}
+
+.deletarEndereco:hover{
+    transition: 1s;
+    background-color: rgba(201, 31, 31, 0.37);
+    border-radius: 15px;
+}

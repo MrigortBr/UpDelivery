@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="5.0">
+  <servlet>
+    <description>Controller Principal</description>
+    <display-name>Controller</display-name>
+    <servlet-name>Controller</servlet-name>
+    <servlet-class>controller.Controller</servlet-class>
+  </servlet>
+  <servlet>
+    <description>Controller Login</description>
+    <display-name>ControllerLogin</display-name>
+    <servlet-name>ControllerLogin</servlet-name>
+    <servlet-class>controller.ControllerLogin</servlet-class>
+  </servlet>
+  <servlet>
+    <description>Controller Cartao</description>
+    <display-name>ControllerCartao</display-name>
+    <servlet-name>ControllerCartao</servlet-name>
+    <servlet-class>controller.ControllerCartao</servlet-class>
+  </servlet>
+  <servlet>
+    <description>Controller Endereco</description>
+    <display-name>ControllerEndereco</display-name>
+    <servlet-name>ControllerEndereco</servlet-name>
+    <servlet-class>controller.ControllerEndereco</servlet-class>
+  </servlet>
+  <servlet>
+    <description>Controller Registrar</description>
+    <display-name>ControllerRegistrar</display-name>
+    <servlet-name>ControllerRegistrar</servlet-name>
+    <servlet-class>controller.ControllerRegistrar</servlet-class>
+  </servlet>
+  <servlet>
+    <description>Controller Profile</description>
+    <display-name>ControllerProfile</display-name>
+    <servlet-name>ControllerProfile</servlet-name>
+    <servlet-class>controller.ControllerProfile</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Controller</servlet-name>
+    <url-pattern>/Controller</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ControllerLogin</servlet-name>
+    <url-pattern>/ControllerLogin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ControllerRegistrar</servlet-name>
+    <url-pattern>/ControllerRegistrar</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ControllerProfile</servlet-name>
+    <url-pattern>/ControllerProfile</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ControllerCartao</servlet-name>
+    <url-pattern>/ControllerCartao</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ControllerEndereco</servlet-name>
+    <url-pattern>/ControllerEndereco</url-pattern>
+  </servlet-mapping>
+  <error-page>
+    <error-code>404</error-code>
+    <location>/erro404.html</location>
+  </error-page>
+  <display-name>UpDelivery</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>ControllerCardapio</display-name>
+    <servlet-name>ControllerCardapio</servlet-name>
+    <servlet-class>controller.ControllerCardapio</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ControllerCardapio</servlet-name>
+    <url-pattern>/ControllerCardapio</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ControllerProduto</display-name>
+    <servlet-name>ControllerProduto</servlet-name>
+    <servlet-class>controller.ControllerProduto</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ControllerProduto</servlet-name>
+    <url-pattern>/ControllerProduto</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ControllerVenda</display-name>
+    <servlet-name>ControllerVenda</servlet-name>
+    <servlet-class>controller.ControllerVenda</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ControllerVenda</servlet-name>
+    <url-pattern>/ControllerVenda</url-pattern>
+  </servlet-mapping>
+</web-app>

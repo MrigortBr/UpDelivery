@@ -1,0 +1,76 @@
+body{
+    overflow-x: hidden;
+}
+
+.fundoProdutos{
+    border-radius: 15px;
+    border: 2px solid black;
+    width: 80%;
+    margin: auto;
+    padding: 1%;
+    min-width: 1100px;
+} 
+
+.fundoProdutos h2{
+	margin: auto;
+	margin-left: 2%;
+}   
+
+.produto{
+    display: grid;
+    grid-template-areas: "img nome preco apagar";
+    grid-template-columns: 25% 25% 35% 15%;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 1%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    width: 98%;
+
+}
+
+input, textarea{
+    border-radius: 15px;
+    border: 1px solid black;
+    width: 100%;
+}
+
+.fotoProduto{
+    grid-area: img;
+    width: fit-content;
+    width: 90%;
+    height: 100%;
+}
+
+.nome{
+    grid-area: nome;
+}
+
+.descricaoProduto{
+    height: 50%;
+}
+
+.preco{
+    grid-area: preco;
+    margin: auto;
+}
+
+.options{
+    grid-area: apagar;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.salvar, .deletar{
+    transition: 1s;
+    margin: auto;
+}
+
+.deletar:hover{
+    filter: invert(14%) sepia(89%) saturate(6035%) hue-rotate(5deg) brightness(107%) contrast(124%);
+}
+
+.salvar:hover{
+    
+    filter: invert(39%) sepia(58%) saturate(650%) hue-rotate(71deg) brightness(97%) contrast(92%);
+}

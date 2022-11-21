@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+#fundoErro{
+    display: block;
+}
+
+#imgErro{
+    width: 50vw;
+    height: 80vh;
+    margin-left: 25vw;
+}
+
+#MensagemErro{
+    width: fit-content;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    font-family: 'Silkscreen', cursive;
+    font-size: 1.2rem;
+}
+
+
+
+a{
+    display: flex;
+    text-align: center;
+    margin: auto;
+    width: fit-content;
+    font-weight: bolder;
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,3 @@
+<svg id="menos" width="38" height="38" fill="none" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" onclick="subtrair()">
+	                <path d="M5 12h14"></path>
+	                </svg>

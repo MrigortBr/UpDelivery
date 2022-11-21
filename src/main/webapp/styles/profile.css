@@ -1,0 +1,109 @@
+#grid{
+    display: grid;
+    grid-template-areas: 
+    "AA AA AA"
+    "AB AC AD"
+    "AE AF AG"
+    "AH AI AJ"
+    ".. .. ..";
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 10%;
+    margin-right: 10%;
+    gap: 10% 0%;
+    height: 100vh;
+    margin-top: 5%;
+    border: 2px solid #010326;
+    border-radius: 5%;
+}
+
+#imgPreview{
+    display: flex;
+    grid-area: AA;
+}
+
+#imgPreview img{
+    border-radius: 50%;
+    width: 25%;
+    height: 40vh;
+    margin: auto;
+}
+
+
+/* Inputs  */
+
+input, select{
+    width: 60%;
+    height: 100%;
+    margin: auto;
+    border: none;
+    border-radius: 15px;
+    outline: 2px solid #010326;
+}
+
+#grid div{
+    display: flex;
+}
+
+#nomeSection{
+    grid-area: AB;
+    width: 100%;
+}
+
+
+
+#sobrenomeSection{
+    grid-area: AC;
+    width: 100%;
+}
+
+#cpfSection{
+    grid-area: AD;
+}
+
+#telefoneSection{
+    grid-area: AE;
+}
+
+#datasNascSection{
+    grid-area: AF;
+}
+
+#datasNascSection{
+    grid-area: AF;
+}
+
+#emailSection{
+    grid-area: AG;
+}
+
+button{
+	width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    border: none;
+    border-radius: 15px;
+    outline: 2px solid #010326;
+}
+
+button:hover{
+	cursor: pointer;
+    font-weight: bolder;
+    outline: 3px solid #010326;
+}
+
+#apagarConta:hover{
+	color: red
+}
+
+#apagarConta{
+    grid-area: AH;
+}
+
+#atualizar{
+    grid-area: AI;
+}
+
+#trocarSenha{
+    grid-area: AJ;
+}
+

@@ -1,0 +1,51 @@
+#principal{
+    position: fixed;
+    background-color: rgba(43, 43, 180, 0.6);
+    width: 450px;
+    height: 200px;
+    top: 60%;
+    border-radius: 0;
+    display: grid;
+    grid-template-areas:
+    "A1 A2";
+    grid-template-columns: 25% 75%;
+    overflow-x: hidden;
+    font-family: 'Kanit', sans-serif;
+    margin-left: 0%;
+    visibility: hidden;
+    transition: 1s;
+    border: 3px #010326 solid;
+}
+
+#img, #img2{
+    margin: auto;
+    background-color: transparent;
+    width: fit-content;
+    margin: auto;
+    width: 80%;
+    grid-area: A1;
+}
+
+#imgPath, #img2Path{
+    fill: transparent;
+    stroke: transparent;
+}
+
+#mensagem{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    padding-left: 5%;
+    overflow-y:scroll;
+    overflow-x: hidden;
+    grid-area: A2;
+}
+#mensagem::-webkit-scrollbar{
+    width: 0;
+}
+
+#erro{
+    align-items: center;
+    width: 90%;
+    height: 100%;
+}

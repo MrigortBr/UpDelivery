@@ -1,5 +1,5 @@
 # Projeto UpDelivery
-*Data de lancamento 21/11/2022*
+*Data de lancamento 21/11/2022*  
 **Projeto passado pelo professor Ricardo Correia na cadeira de Programação II e Estrutura de dados**
 
 ## Sobre o projeto  
